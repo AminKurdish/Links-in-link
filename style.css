@@ -5,12 +5,18 @@ body, header, main{
 }
 
 body{
-    font-family: Arial, sans-serif;
+   /* font-family: ;*/
     color: aliceblue;
     margin: 0;
-    height: 110vh;
+    height: 123vh;
     justify-content: center;
     gap: 20px;
+}
+
+h1, h2{
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2{
@@ -27,6 +33,8 @@ img{
     box-shadow: 0px 0px 10px 5px black;
 }
 
+
+/*Button area =========================*/
 button{
     padding: 11px;
     width: 550px;
@@ -37,26 +45,70 @@ button{
     color: white;
     background-color: black;
     box-shadow: 0px 0px 10px 2px silver;
-    transition: 0.1s;
+    transition: 0.3s;
     flex-wrap: nowrap;
 }
+button:hover{
+    background-color: silver;
+    cursor: pointer;
+    color: black;
+    transform: translateY(-2px);
+}
 
+.btn-cv:hover{
+    background-color:#ffffff;
+    color: black;
+}
+.btn-facebook:hover{
+    background-color: #3b5998;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #3b5998;
+}
+.btn-telegram:hover{
+    background-color: #0088cc;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #0088cc;
+}
+.btn-snapchat:hover{
+    background-color: #fffc00;
+    color: black;
+    box-shadow: 0px 0px 10px 2px #fffc00;
+}
+.btn-instagram:hover{
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.btn-github:hover{
+    background-color: #333;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #333;
+}
+.btn-whatsapp:hover{
+    background-color: #25D366;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #25D366;
+}
+
+
+/*Large and small page area =====================*/
 @media (max-width: 600px) {
     button {
         width: 400px;
     }
 }
 
+/*Icon for margin area ===============*/
 .icon{
     margin-right: 15px;
 }
-
-button:hover{
-    background-color: silver;
-    cursor: pointer;
-    color: black;
+.Icon{
+    margin-right: 45px;
 }
 
+
+/*Video background area ==========*/
 .video-background {
     position: fixed;
     top: 0;
@@ -67,10 +119,20 @@ button:hover{
     z-index: -1;
 }
 
-
+/*for text area ========*/
 .copy{
     font-size: small;
     color: white;
     text-align: center;
     margin-top: 15px;
+}
+
+/*Text and Gmail area =========== */
+.E-mail{
+    color: white;
+    text-decoration: none;
+}
+.E-mail:hover{
+    color:cornflowerblue;
+    text-decoration: underline;
 }
